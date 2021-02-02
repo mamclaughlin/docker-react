@@ -8,5 +8,5 @@ before_install:
   - docker build -t mamclaughlin/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true mamclaughlin/docker-react npm run test -- --coverage
+  - docker run mamclaughlin/docker-react npm run test -- --coverage
     
